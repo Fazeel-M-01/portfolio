@@ -23,8 +23,8 @@
                     <p class="text-[0.75rem] font-light">Web Developer</p>
                     <div class="mt-4 flex space-x-6">
                         <!-- LinkedIn Icon -->
-                        <a href="https://www.linkedin.com/in/fazeel-malik-087a56221" target="_blank" rel="noopener noreferrer"
-                            class="text-[#e5e7eb] hover:text-blue-700 duration-700">
+                        <a href="https://www.linkedin.com/in/fazeel-malik-087a56221" target="_blank"
+                            rel="noopener noreferrer" class="text-[#e5e7eb] hover:text-blue-700 duration-700">
                             <i class="fab fa-linkedin fa-2x"></i>
                         </a>
                     </div>
@@ -134,7 +134,8 @@
             </div>
             <div class="mt-5">
                 <div class="cards-container">
-                    <div *ngFor="let card of cards" class="card hover:-translate-y-2 duration-700 cursor-pointer animate-up"
+                    <div *ngFor="let card of cards"
+                        class="card hover:-translate-y-2 duration-700 cursor-pointer animate-up"
                         [ngStyle]="{ 'border-bottom': '2px solid ' + card.color }">
                         <i [class]="card.icon" [ngClass]="card.color + '-icon'" class="card-icon"></i>
                         <h2 class="card-title">{{ card.title }}</h2>
@@ -159,10 +160,12 @@
                     </p>
                 </div>
                 <div class="mt-[2.5rem] mb-5 animate-up">
-                    <a href="#contact"
-                        class="border-2 bg-black rounded-lg border-[#1f1f1f] hover:bg-[#1f1f1f] hover:border-[#00bcd9] py-5 px-[2.5rem] duration-700">Hire
-                        Me
-                    </a>
+                    <button>
+                        <a href="#contact"
+                            class="border-2 bg-black rounded-lg border-[#1f1f1f] hover:bg-[#1f1f1f] hover:border-[#00bcd9] py-5 px-[2.5rem] duration-700">Hire
+                            Me
+                        </a>
+                    </button>
                 </div>
             </div>
         </section>
@@ -223,7 +226,8 @@
         </section>
         <section id="projects" class="min-h-fit my-[5rem]">
             <h3 class="text-[1rem] my-4 font-light animate-up">PROJECTS</h3>
-            <h1 class="text-[2rem] uppercase animate-up">Projects that Reflect My Skills, Creativity, and Dedication</h1>
+            <h1 class="text-[2rem] uppercase animate-up">Projects that Reflect My Skills, Creativity, and Dedication
+            </h1>
             <div class="my-[2rem]">
                 <div class="pro-container">
                     <div *ngFor="let procard of projectCards"
@@ -274,7 +278,8 @@
 
                 <h2 class="text-[1.5rem] animate-up">Social Media</h2>
                 <div class="skills-category">
-                    <div class="skill-bar animate-up" *ngFor="let skill of socialMediaSkills; let i = index" [attr.data-index]="i">
+                    <div class="skill-bar animate-up" *ngFor="let skill of socialMediaSkills; let i = index"
+                        [attr.data-index]="i">
                         <div class="skill-name">{{ skill.name }}</div>
                         <div class="skill-bar-container">
                             <div class="skill-bar-overlay" [style.width.%]="skill.inView ? skill.percentage : 0"
@@ -352,39 +357,40 @@
             <div class="flex gap-10 py-4 flex-wrap animate-up">
                 <h2 class="text-[1.5rem] pt-4 ">Hobbies</h2>
                 <div class="bubble">
-                    <p class="bubble-text">Cricket</p>
+                    <span class="bubble-text">Cricket</span>
                     <div class="bubble-content">
                         <h4>Cricket</h4>
-                        <p>Enjoy playing cricket with friends and participating in local matches. Passionate about fast
-                            bowling.</p>
+                        <span>Enjoy playing cricket with friends and participating in local matches. Passionate about
+                            fast
+                            bowling.</span>
                     </div>
                 </div>
 
                 <!-- Football Hobby -->
                 <div class="bubble">
-                    <p class="bubble-text">Football</p>
+                    <span class="bubble-text">Football</span>
                     <div class="bubble-content">
                         <h4>Football</h4>
-                        <p>Enjoy both watching and playing with friends on weekends.</p>
+                        <span>Enjoy both watching and playing with friends on weekends.</span>
                     </div>
                 </div>
 
                 <!-- Running Hobby -->
                 <div class="bubble">
-                    <p class="bubble-text">Running</p>
+                    <span class="bubble-text">Running</span>
                     <div class="bubble-content">
                         <h4>Running</h4>
-                        <p>Running is a great way to clear my mind. I enjoy early morning and evening runs.</p>
+                        <span>Running is a great way to clear my mind. I enjoy early morning and evening runs.</span>
                     </div>
                 </div>
 
                 <!-- Listening to Music Hobby -->
                 <div class="bubble">
-                    <p class="bubble-text">Music</p>
+                    <span class="bubble-text">Music</span>
                     <div class="bubble-content">
                         <h4>Listening to Music</h4>
-                        <p>A huge fan of different genres, especially hiphop. Music is a great way to unwind after a
-                            busy day.</p>
+                        <span>A huge fan of different genres, especially hiphop. Music is a great way to unwind after a
+                            busy day.</span>
                     </div>
                 </div>
             </div>
@@ -392,21 +398,22 @@
             <div class="flex gap-10 py-4 flex-wrap animate-up">
                 <h2 class="text-[1.5rem] pt-4">Languages</h2>
                 <div class="bubble">
-                    <p class="bubble-text">English</p>
+                    <span class="bubble-text">English</span>
                     <div class="bubble-content">
                         <h4>English</h4>
-                        <p>Professional Working Proficiency. Comfortable with both written and spoken English in
-                            professional settings.</p>
+                        <span>Professional Working Proficiency. Comfortable with both written and spoken English in
+                            professional settings.</span>
                     </div>
                 </div>
 
                 <!-- Urdu Language (Native) -->
                 <div class="bubble">
-                    <p class="bubble-text">Urdu</p>
+                    <span class="bubble-text">Urdu</span>
                     <div class="bubble-content">
                         <h4>Urdu</h4>
-                        <p>Native Language. Fluent in both written and spoken Urdu, my first language since childhood.
-                        </p>
+                        <span>Native Language. Fluent in both written and spoken Urdu, my first language since
+                            childhood.
+                        </span>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 a,
 p,
-button {
+button, span {
     font-family: 'Quicksand', Arial, sans-serif !important;
 
 }
@@ -266,41 +266,42 @@ h6 {
 }
 
 .skills-category {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 20px;
-   width: 100%;
- }
- 
- .skill-bar {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   gap: 10px;
-   width: 30%;
- }
- 
- .skill-name {
-   font-weight: bold;
- }
- 
- .skill-bar-container {
-   width: 100%;
-   background-color: #ddd;
-   height: 10px;
-   border-radius: 5px;
-   position: relative;
- }
- 
- .skill-bar-overlay {
-   height: 100%;
-   border-radius: 5px;
-   position: absolute;
-   width: 0%;
-   transition: width 3s ease-out; /* Smooth animation */
- }
- 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.skill-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 30%;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.skill-bar-overlay {
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    width: 0%;
+    transition: width 3s ease-out;
+    /* Smooth animation */
+}
+
 span {
     font-size: 0.875rem;
 }
@@ -491,7 +492,7 @@ span {
 .animate-up {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition: opacity 2s ease, transform 2s ease;
 }
 
 .animate-up.active {

@@ -148,41 +148,41 @@ export class PortfolioHomeComponent {
   ];
 
   webDevelopmentSkills = [
-    { name: 'HTML', percentage: 90, color: '#E34F26' , inView: false , displayPercentage: 0 },
-    { name: 'CSS', percentage: 90, color: '#563D7C' , inView: false , displayPercentage: 0},
-    { name: 'Bootstrap', percentage: 90, color: '#1572B6' , inView: false , displayPercentage: 0},
-    { name: 'Tailwind', percentage: 90, color: '#38B2AC', inView: false , displayPercentage: 0},
-    { name: 'Node.js', percentage: 70, color: '#8CC84B' , inView: false , displayPercentage: 0},
-    { name: 'Express', percentage: 70, color: '#00ff7b', inView: false , displayPercentage: 0 },
-    { name: 'MySQL', percentage: 70, color: '#4479A1', inView: false , displayPercentage: 0},
-    { name: 'Machine Learning', percentage: 70, color: '#8E44AD', inView: false , displayPercentage: 0}
+    { name: 'HTML', percentage: 90, color: '#E34F26', inView: false, displayPercentage: 0 },
+    { name: 'CSS', percentage: 90, color: '#563D7C', inView: false, displayPercentage: 0 },
+    { name: 'Bootstrap', percentage: 90, color: '#1572B6', inView: false, displayPercentage: 0 },
+    { name: 'Tailwind', percentage: 90, color: '#38B2AC', inView: false, displayPercentage: 0 },
+    { name: 'Node.js', percentage: 70, color: '#8CC84B', inView: false, displayPercentage: 0 },
+    { name: 'Express', percentage: 70, color: '#00ff7b', inView: false, displayPercentage: 0 },
+    { name: 'MySQL', percentage: 70, color: '#4479A1', inView: false, displayPercentage: 0 },
+    { name: 'Machine Learning', percentage: 70, color: '#8E44AD', inView: false, displayPercentage: 0 }
   ];
 
   graphicDesigningSkills = [
-    { name: 'UI/UX', percentage: 80, color: '#F9A825' , inView: false , displayPercentage: 0 },
-    { name: 'Logo Design', percentage: 70, color: '#FF3366' , inView: false , displayPercentage: 0 },
-    { name: 'Illustrations', percentage: 60, color: '#00B0FF' , inView: false , displayPercentage: 0 }
+    { name: 'UI/UX', percentage: 80, color: '#F9A825', inView: false, displayPercentage: 0 },
+    { name: 'Logo Design', percentage: 70, color: '#FF3366', inView: false, displayPercentage: 0 },
+    { name: 'Illustrations', percentage: 60, color: '#00B0FF', inView: false, displayPercentage: 0 }
   ];
 
   socialMediaSkills = [
-    { name: 'SEO & Digital Marketing', percentage: 70, color: '#FF8C00' , inView: false , displayPercentage: 0  },
-    { name: 'Content Writing', percentage: 60, color: '#6A4E23' , inView: false , displayPercentage: 0 },
+    { name: 'SEO & Digital Marketing', percentage: 70, color: '#FF8C00', inView: false, displayPercentage: 0 },
+    { name: 'Content Writing', percentage: 60, color: '#6A4E23', inView: false, displayPercentage: 0 },
   ];
 
   programmingLanguagesSkills = [
-    { name: 'Javascript', percentage: 80, color: '#F7DF1E' , inView: false , displayPercentage: 0  },
-    { name: 'Typescript', percentage: 80, color: '#3178C6' , inView: false , displayPercentage: 0   },
-    { name: 'Python', percentage: 70, color: '#3776AB' , inView: false , displayPercentage: 0   }
+    { name: 'Javascript', percentage: 80, color: '#F7DF1E', inView: false, displayPercentage: 0 },
+    { name: 'Typescript', percentage: 80, color: '#3178C6', inView: false, displayPercentage: 0 },
+    { name: 'Python', percentage: 70, color: '#3776AB', inView: false, displayPercentage: 0 }
   ];
 
   toolsAndFrameworksSkills = [
-    { name: 'Angular', percentage: 80, color: '#DD0031' , inView: false , displayPercentage: 0   },
-    { name: 'Django', percentage: 70, color: '#092E20' , inView: false , displayPercentage: 0  },
-    { name: 'Adobe XD', percentage: 75, color: '#FF61F6' , inView: false , displayPercentage: 0  },
-    { name: 'Figma', percentage: 70, color: '#F24E1E' , inView: false , displayPercentage: 0  },
-    { name: 'Illustrator', percentage: 70, color: '#ff9a00' , inView: false , displayPercentage: 0  },
-    { name: 'WordPress', percentage: 80, color: '#21759B' , inView: false , displayPercentage: 0  },
-    { name: 'Shopify', percentage: 80, color: '#21759B' , inView: false , displayPercentage: 0  },
+    { name: 'Angular', percentage: 80, color: '#DD0031', inView: false, displayPercentage: 0 },
+    { name: 'Django', percentage: 70, color: '#092E20', inView: false, displayPercentage: 0 },
+    { name: 'Adobe XD', percentage: 75, color: '#FF61F6', inView: false, displayPercentage: 0 },
+    { name: 'Figma', percentage: 70, color: '#F24E1E', inView: false, displayPercentage: 0 },
+    { name: 'Illustrator', percentage: 70, color: '#ff9a00', inView: false, displayPercentage: 0 },
+    { name: 'WordPress', percentage: 80, color: '#21759B', inView: false, displayPercentage: 0 },
+    { name: 'Shopify', percentage: 80, color: '#21759B', inView: false, displayPercentage: 0 },
   ];
   certifications = [
     {
@@ -220,7 +220,8 @@ export class PortfolioHomeComponent {
 
   isSidebarOpen = false;
   contactForm: FormGroup | any;
-  constructor(private fb: FormBuilder , private renderer: Renderer2, private el: ElementRef) {
+  constructor(private fb: FormBuilder, private renderer: Renderer2, private el: ElementRef) {
+
     if (typeof window !== 'undefined') {
       // Add IntersectionObserver logic only if we are on the client-side
       this.addIntersectionObserver();
@@ -232,7 +233,7 @@ export class PortfolioHomeComponent {
       to_name: ['Portfolio'],
       message: ['', [Validators.required]],
     })
-    
+
   }
 
   toggleSidebar() {
@@ -258,16 +259,16 @@ export class PortfolioHomeComponent {
 
   addIntersectionObserver() {
     const sections = document.querySelectorAll('.skills-category');
-  
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = Number(entry.target.getAttribute('data-index'));
-  
+
             const sectionType = entry.target.closest('.skills-category')?.previousElementSibling?.textContent;
             let skillsArray = this.webDevelopmentSkills;
-  
+
             if (sectionType?.includes('Graphic Designing')) {
               skillsArray = this.graphicDesigningSkills;
             } else if (sectionType?.includes('Social Media')) {
@@ -277,10 +278,10 @@ export class PortfolioHomeComponent {
             } else if (sectionType?.includes('Tools & Framework')) {
               skillsArray = this.toolsAndFrameworksSkills;
             }
-  
+
             if (!skillsArray[index].inView) {
               skillsArray[index].inView = true;
-  
+
               const interval = setInterval(() => {
                 if (skillsArray[index].displayPercentage < skillsArray[index].percentage) {
                   skillsArray[index].displayPercentage++;
@@ -294,30 +295,53 @@ export class PortfolioHomeComponent {
       },
       { threshold: 0.5 }
     );
-  
+
     sections.forEach((section) => {
       section.querySelectorAll('.skill-bar').forEach((skillBar) => {
         observer.observe(skillBar);
       });
     });
   }
+
   addIntersectionObserver1() {
-    const elements = document.querySelectorAll('.animate-up');
+      const elements = document.querySelectorAll('.animate-up');
 
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target); // Stop observing after animation starts
-                }
-            });
-        },
-        { threshold: 0.2 } // Trigger when 20% of the element is visible
-    );
+      const observer = new IntersectionObserver(
+          (entries) => {
+              entries.forEach((entry, index) => {
+                  if (entry.isIntersecting) {
+                      const delay = index * 200; // Stagger animation for each card
 
-    elements.forEach((element) => observer.observe(element));
-}
+                      setTimeout(() => {
+                          entry.target.classList.add('active');
+                      }, delay);
+
+                      observer.unobserve(entry.target); // Stop observing after activation
+                  }
+              });
+          },
+          { threshold: 0.2 }
+      );
+
+      // Observe each element
+      elements.forEach((element) => observer.observe(element));
+      elements.forEach((element, index) => {
+          if (this.isElementInViewport(element)) {
+              setTimeout(() => {
+                  element.classList.add('active');
+              }, index * 50);
+          }
+      });
+  }
+
+  // **Helper function to check if an element is in the viewport**
+  isElementInViewport(el: Element): boolean {
+      const rect = el.getBoundingClientRect();
+      return rect.top < window.innerHeight && rect.bottom >= 0;
+  }
+
+
+
 
 }
 
