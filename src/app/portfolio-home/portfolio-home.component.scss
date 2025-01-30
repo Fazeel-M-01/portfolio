@@ -178,7 +178,7 @@ h6 {
 .highlight-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
 }
 
@@ -486,4 +486,15 @@ span {
         max-width: calc(100% - 1rem);
         margin: 1rem 0rem;
     }
+}
+
+.animate-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-up.active {
+    opacity: 1;
+    transform: translateY(0);
 }

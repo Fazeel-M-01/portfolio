@@ -189,14 +189,14 @@ export class PortfolioHomeComponent {
       title: 'Python Intermediate',
       organization: 'Sololearn',
       date: '03/2023 - 04/2023',
-      icon: 'fa-solid fa-python', // Add relevant font-awesome icon
+      icon: 'fa-brands fa-python', // Add relevant font-awesome icon
       color: '#3776AB' // Python blue
     },
     {
       title: 'Introduction to Python',
       organization: 'Sololearn',
       date: '03/2023 - 03/2023',
-      icon: 'fa-solid fa-python',
+      icon: 'fa-brands fa-python',
       color: '#306998'
     },
     {
@@ -224,6 +224,7 @@ export class PortfolioHomeComponent {
     if (typeof window !== 'undefined') {
       // Add IntersectionObserver logic only if we are on the client-side
       this.addIntersectionObserver();
+      this.addIntersectionObserver1();
     }
     this.contactForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
@@ -300,6 +301,23 @@ export class PortfolioHomeComponent {
       });
     });
   }
-  
+  addIntersectionObserver1() {
+    const elements = document.querySelectorAll('.animate-up');
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Stop observing after animation starts
+                }
+            });
+        },
+        { threshold: 0.2 } // Trigger when 20% of the element is visible
+    );
+
+    elements.forEach((element) => observer.observe(element));
+}
+
 }
 
